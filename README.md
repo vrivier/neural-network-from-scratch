@@ -9,7 +9,7 @@ To test the neural network on the MNIST dataset, you should first run the **data
 ### Data preprocessing
 
 The network only takes flat arrays as input, and MNIST data is 2D (28*28). I had to flatten the data using resize function from numpy.  
-I also had a difficulty with the values contained in the MNIST data, that ranges between 0 and 255 for each pixel. Those high values were preventing the network from training, so I chose a threshold under which the pixel would be 0 and abose which the pixel would be 1. This debugged the training.  
+I also had a difficulty with the values contained in the MNIST data, that ranges between 0 and 255 for each pixel. Those high values were preventing the network from training, so I chose a threshold under which the pixel would be 0 and abose which the pixel would be 1. This debugged the training. (normalizing by dividing all values by 255 would be a possible improvement)  
 Finally, I encoded the labels as one-hot vectors instead of values from 0 to 9 to be in a multiclass classification paradigm. 
 
 ### Hyperparameters
