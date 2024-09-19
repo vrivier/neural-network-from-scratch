@@ -21,13 +21,3 @@ The network comes with possibilities to tune its architecture for fine-tuning pu
 https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/  
 https://www.youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH  
 
-### Citation
-```
-@article{lecun2010mnist,
-  title={MNIST handwritten digit database},
-  author={LeCun, Yann and Cortes, Corinna and Burges, CJ},
-  journal={ATT Labs [Online]. Available: http://yann.lecun.com/exdb/mnist},
-  volume={2},
-  year={2010}
-}
-```
