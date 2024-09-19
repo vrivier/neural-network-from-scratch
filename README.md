@@ -1,10 +1,19 @@
 # neural-network-from-scratch
 Functionnal multi-layered perceptron hand-coded tested on MNIST dataset
 
+### Modules
+
+NN.py contains the handcoded neural network class implementing stochastic gradient descent and backpropagation. The network is customizable with various activation functions available and customizable number of layers/neurons. The weights are initialized with Xavier initialization. 
+
+data.py loads and preprocess the MNIST data to ready for training. 
+
+train-test.py uses the preprocessed data to train and monitor a neural network. 
+
 ### Usage
 
 This project needs tensorflow to load the dataset. It then only uses numpy (included in tensorflow).  
-To test the neural network on the MNIST dataset, you should first run the **data.py** file, which loads the data, preprocesses it and pickles it (~60Mo). In a second time, you can simply run **train-test.py**. This file will load the preprocessed data, instanciate a neural network, and then train it on the data. It also displays the accuracy every 500 examples passed through the network, so you can see it progressively learn. It reaches 80-90% accuracy pretty fast which is satisfying and shows the network works. 
+To test the neural network on the MNIST dataset, you should first run the **data.py** file, which loads the data, preprocesses it and pickles it (~60Mo).  
+In a second time, you can simply run **train-test.py**. This file will load the preprocessed data, instanciate a neural network, and then train it on the data. It also displays the accuracy every 500 examples passed through the network, so you can see it progressively learn. It reaches 80-90% accuracy pretty fast which is satisfying and shows the network works. 
 
 ### Data preprocessing
 
